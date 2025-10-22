@@ -120,7 +120,7 @@ public class ElementGunRightclickedProcedure {
 						entity.level()
 								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((3 + Mth.nextInt(RandomSource.create(), 1, 10)))), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
 										entity))
-								.getBlockPos().getZ() + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius,
+								.getBlockPos().getX() + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius,
 						entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(3)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY() + 0
 								+ Mth.nextDouble(RandomSource.create(), 0, 0.5) * particleRadius,
 						entity.level().clip(
