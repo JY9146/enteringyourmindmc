@@ -1,0 +1,6 @@
+{
+  "parent": "enteringyourmind:displaysettings/elementgunair",
+  "textures": {
+    "layer0": "enteringyourmind:item/elementgunairmode"
+  }
+}

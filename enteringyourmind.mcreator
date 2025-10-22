@@ -1,0 +1,1605 @@
+{
+  "mod_elements": [
+    {
+      "name": "DreamlandBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dreamland_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/models/block/dreamland_block.json",
+          "src/main/resources/assets/enteringyourmind/models/item/dreamland_block.json",
+          "src/main/resources/assets/enteringyourmind/blockstates/dreamland_block.json",
+          "src/main/java/net/mcreator/enteringyourmind/block/DreamlandBlockBlock.java",
+          "src/main/resources/data/enteringyourmind/loot_tables/blocks/dreamland_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Subconscious",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subconscious",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/enteringyourmind/dimension/subconscious.json",
+          "src/main/java/net/mcreator/enteringyourmind/world/dimension/SubconsciousDimension.java",
+          "src/main/resources/data/enteringyourmind/dimension_type/subconscious.json"
+        ]
+      }
+    },
+    {
+      "name": "Wonderland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wonderland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/enteringyourmind/worldgen/biome/wonderland.json"
+        ]
+      }
+    },
+    {
+      "name": "EnteringSubconscious",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entering_subconscious",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/EnteringSubconsciousProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SubconsciousPlayerLeavesDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subconscious_player_leaves_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/SubconsciousPlayerLeavesDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwimOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swim_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/SwimOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Swim",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swim",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/network/SwimMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "SwimOnKeyPressedP2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swim_on_key_pressed_p_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/SwimOnKeyPressedP2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SEDevice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "se_device",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/SEDeviceItem.java",
+          "src/main/resources/assets/enteringyourmind/models/item/se_device.json"
+        ]
+      }
+    },
+    {
+      "name": "MetalRod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_rod",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/MetalRodItem.java",
+          "src/main/resources/assets/enteringyourmind/models/item/metal_rod.json"
+        ]
+      }
+    },
+    {
+      "name": "MetalRodCrafting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_rod_crafting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/enteringyourmind/recipes/metal_rod_crafting.json"
+        ]
+      }
+    },
+    {
+      "name": "SEDeviceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "se_device_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/enteringyourmind/recipes/se_device_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Titaniumite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titaniumite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/TitaniumiteItem.java",
+          "src/main/resources/assets/enteringyourmind/models/item/titaniumite.json"
+        ]
+      }
+    },
+    {
+      "name": "Titanium",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/enteringyourmind/loot_tables/blocks/titanium.json",
+          "src/main/resources/data/enteringyourmind/worldgen/placed_feature/titanium.json",
+          "src/main/resources/data/enteringyourmind/forge/biome_modifier/titanium_biome_modifier.json",
+          "src/main/resources/assets/enteringyourmind/models/block/titanium.json",
+          "src/main/resources/assets/enteringyourmind/models/item/titanium.json",
+          "src/main/java/net/mcreator/enteringyourmind/block/TitaniumBlock.java",
+          "src/main/resources/data/enteringyourmind/worldgen/configured_feature/titanium.json",
+          "src/main/resources/assets/enteringyourmind/blockstates/titanium.json"
+        ]
+      }
+    },
+    {
+      "name": "Titaniumitem",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titaniumitem",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/enteringyourmind/recipes/titaniumitem.json"
+        ]
+      }
+    },
+    {
+      "name": "TitaniumiteRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titaniumite_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/enteringyourmind/recipes/titaniumite_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RecipeGiver",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_giver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/RecipeGiverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeGiverP2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_giver_p_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/RecipeGiverP2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeGiverP3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_giver_p_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/RecipeGiverP3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SEDeviceRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "se_device_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/SEDeviceRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TitaniumItemm",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_itemm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/TitaniumItemmItem.java",
+          "src/main/resources/assets/enteringyourmind/models/item/titanium_itemm.json"
+        ]
+      }
+    },
+    {
+      "name": "ElementGunRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/ElementGunRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementGun",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/renderer/ElementGunItemRenderer.java",
+          "src/main/java/net/mcreator/enteringyourmind/item/ElementGunItem.java",
+          "src/main/resources/assets/enteringyourmind/models/item/element_gun.json",
+          "src/main/java/net/mcreator/enteringyourmind/item/model/ElementGunItemModel.java"
+        ]
+      }
+    },
+    {
+      "name": "ElementGunFire",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/renderer/ElementGunFireItemRenderer.java",
+          "src/main/java/net/mcreator/enteringyourmind/item/model/ElementGunFireItemModel.java",
+          "src/main/java/net/mcreator/enteringyourmind/item/ElementGunFireItem.java",
+          "src/main/resources/assets/enteringyourmind/models/item/element_gun_fire.json"
+        ]
+      }
+    },
+    {
+      "name": "ElementGunWater",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/ElementGunWaterItem.java",
+          "src/main/java/net/mcreator/enteringyourmind/item/model/ElementGunWaterItemModel.java",
+          "src/main/resources/assets/enteringyourmind/models/item/element_gun_water.json",
+          "src/main/java/net/mcreator/enteringyourmind/item/renderer/ElementGunWaterItemRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ElementGunEarth",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_earth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/ElementGunEarthItem.java",
+          "src/main/resources/assets/enteringyourmind/models/item/element_gun_earth.json",
+          "src/main/java/net/mcreator/enteringyourmind/item/renderer/ElementGunEarthItemRenderer.java",
+          "src/main/java/net/mcreator/enteringyourmind/item/model/ElementGunEarthItemModel.java"
+        ]
+      }
+    },
+    {
+      "name": "ElementGunAir",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/item/ElementGunAirItem.java",
+          "src/main/java/net/mcreator/enteringyourmind/item/model/ElementGunAirItemModel.java",
+          "src/main/java/net/mcreator/enteringyourmind/item/renderer/ElementGunAirItemRenderer.java",
+          "src/main/resources/assets/enteringyourmind/models/item/element_gun_air.json"
+        ]
+      }
+    },
+    {
+      "name": "Magic1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/magic_1.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Magic1Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Fire",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/FireParticle.java",
+          "src/main/resources/assets/enteringyourmind/particles/fire.json"
+        ]
+      }
+    },
+    {
+      "name": "Dirt",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/DirtParticle.java",
+          "src/main/resources/assets/enteringyourmind/particles/dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "Leaves1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leaves_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Leaves1Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/leaves_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Leavesp2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leaves2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/leaves2.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Leavesp2Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Leaves3",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leaves_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/leaves_3.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Leaves3Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Leaves4",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leaves_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Leaves4Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/leaves_4.json"
+        ]
+      }
+    },
+    {
+      "name": "Ice",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/IceParticle.java",
+          "src/main/resources/assets/enteringyourmind/particles/ice.json"
+        ]
+      }
+    },
+    {
+      "name": "Dust",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/DustParticle.java",
+          "src/main/resources/assets/enteringyourmind/particles/dust.json"
+        ]
+      }
+    },
+    {
+      "name": "Smoke",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/smoke.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/SmokeParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "Magic2",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/magic_2.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Magic2Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Magic22",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_22",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Magic22Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/magic_22.json"
+        ]
+      }
+    },
+    {
+      "name": "Magic23",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_23",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/magic_23.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Magic23Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Magic24",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_24",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Magic24Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/magic_24.json"
+        ]
+      }
+    },
+    {
+      "name": "WaterP1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water11",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/water11.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/WaterP1Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Water12",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_12",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/water_12.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water12Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Water13",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_13",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water13Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/water_13.json"
+        ]
+      }
+    },
+    {
+      "name": "Water14",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_14",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/water_14.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water14Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Water15",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_15",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water15Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/water_15.json"
+        ]
+      }
+    },
+    {
+      "name": "Water16",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_16",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/water_16.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water16Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Water17",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_17",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/water_17.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water17Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Water21",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_21",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/water_21.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water21Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "Water22",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_22",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water22Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/water_22.json"
+        ]
+      }
+    },
+    {
+      "name": "Water23",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_23",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water23Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/water_23.json"
+        ]
+      }
+    },
+    {
+      "name": "Water24",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_24",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water24Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/water_24.json"
+        ]
+      }
+    },
+    {
+      "name": "Water25",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_25",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water25Particle.java",
+          "src/main/resources/assets/enteringyourmind/particles/water_25.json"
+        ]
+      }
+    },
+    {
+      "name": "Water26",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_26",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/enteringyourmind/particles/water_26.json",
+          "src/main/java/net/mcreator/enteringyourmind/client/particle/Water26Particle.java"
+        ]
+      }
+    },
+    {
+      "name": "DamageDealerP1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_dealer_p_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/DamageDealerP1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementGunFireRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_fire_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/ElementGunFireRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DamageDealerP2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_dealer_p_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/DamageDealerP2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InvisMagic",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_magic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/entity/InvisMagicEntity.java",
+          "src/main/java/net/mcreator/enteringyourmind/client/renderer/InvisMagicRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "InvisFire",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/renderer/InvisFireRenderer.java",
+          "src/main/java/net/mcreator/enteringyourmind/entity/InvisFireEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ElementGunWaterRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_water_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/ElementGunWaterRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InvisWater",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/entity/InvisWaterEntity.java",
+          "src/main/java/net/mcreator/enteringyourmind/client/renderer/InvisWaterRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "DamageDealerP3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_dealer_p_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/DamageDealerP3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementGunEarthRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_earth_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/ElementGunEarthRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DamageDealerP4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_dealer_p_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/DamageDealerP4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InvisEarth",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_earth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/renderer/InvisEarthRenderer.java",
+          "src/main/java/net/mcreator/enteringyourmind/entity/InvisEarthEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "TouchedTooMuchGrass",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "touched_too_much_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/enteringyourmind/damage_type/touched_too_much_grass.json"
+        ]
+      }
+    },
+    {
+      "name": "InvisAir",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invis_air",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/client/renderer/InvisAirRenderer.java",
+          "src/main/java/net/mcreator/enteringyourmind/entity/InvisAirEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "DamageDealerP5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_dealer_p_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/DamageDealerP5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementGunAirRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "element_gun_air_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/ElementGunAirRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SEDeviceItemInHandTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "se_device_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/SEDeviceItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Damage",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "Damage2",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "Damage3",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "Damage4",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "Itemstack0",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack1",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack10",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack11",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack12",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack13",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack14",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack15",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack16",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack17",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack18",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack19",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack2",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack20",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack21",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack22",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack23",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack24",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack25",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack26",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack27",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack28",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack29",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack3",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack30",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack31",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack32",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack33",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack34",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack35",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack36",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack37",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack38",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack39",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack4",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack40",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack5",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack6",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack7",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack8",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Itemstack9",
+      "type": "itemstack",
+      "scope": "player_persistent",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Num",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ShootXCoord",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "ShootYCoord",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "ShootZCoord",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "Swim",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "XCoord",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Ycoord",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ZCoord",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:Titanium"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Titanium",
+      "~CUSTOM:DreamlandBlock"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:DreamlandBlock"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.enteringyourmind.metal_rod": "Metal Rod",
+      "entity.enteringyourmind.invis_water": "Invis Water",
+      "entity.enteringyourmind.invis_magic": "Invis Magic",
+      "item.enteringyourmind.element_gun_fire": "Element Gun",
+      "block.enteringyourmind.dreamland_block": "Dreamland Block",
+      "item.enteringyourmind.heh": "titaniumitem",
+      "item.enteringyourmind.element_gun": "Element Gun",
+      "item.enteringyourmind.titaniumite": "Titaniumite",
+      "entity.enteringyourmind.invis_fire": "Invis Fire",
+      "death.attack.touched_too_much_grass.item": "%1$s touched too much grass by %2$s using %3$s",
+      "entity.enteringyourmind.invis_earth": "Invis Earth",
+      "entity.enteringyourmind.invis_air": "Invis Air",
+      "item.enteringyourmind.element_gun_earth": "Element Gun",
+      "item.enteringyourmind.titanium_itemm": "Titaniumite",
+      "item.enteringyourmind.se_device": "SE Device",
+      "death.attack.touched_too_much_grass.player": "%1$s touched too much grass whilst trying to escape %2$s",
+      "death.attack.touched_too_much_grass": "%1$s touched too much grass",
+      "biome.enteringyourmind.wonderland": "Wonderland",
+      "block.enteringyourmind.titanium": "Titanium Ore",
+      "key.enteringyourmind.swim": "Swim",
+      "item.enteringyourmind.element_gun_water": "Element Gun",
+      "item.enteringyourmind.element_gun_air": "Element Gun"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "enteringyourmind",
+    "modName": "enteringyourmind",
+    "version": "1.0.0",
+    "author": "JY9146, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.enteringyourmind"
+  },
+  "mcreatorVersion": 202400452410
+}

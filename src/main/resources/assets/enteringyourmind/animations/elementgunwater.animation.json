@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.elementgunwater.idle": {
+			"loop": true
+		},
+		"animation.elementgunwater.shoot": {
+			"animation_length": 1,
+			"bones": {
+				"bone": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bone2": {
+					"rotation": {
+						"vector": ["-math.sin(query.anim_time * 400) * 10", 0, 0]
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5417": {
+							"vector": [0, 0, 3]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "fire"
+				},
+				"0.0417": {
+					"effect": "waterp2"
+				},
+				"0.0833": {
+					"effect": "ice"
+				}
+			}
+		}
+	}
+}

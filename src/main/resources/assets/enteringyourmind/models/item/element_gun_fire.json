@@ -1,0 +1,6 @@
+{
+  "parent": "enteringyourmind:displaysettings/elementgunfire",
+  "textures": {
+    "layer0": "enteringyourmind:item/elementgunfiremode"
+  }
+}

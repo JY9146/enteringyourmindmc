@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "enteringyourmind:item/pixil-frame-0_4"
+  }
+}

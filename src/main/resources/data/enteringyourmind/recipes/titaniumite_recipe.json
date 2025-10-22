@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "enteringyourmind:titanium_itemm"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "enteringyourmind:titanium_itemm"
+    }
+  ],
+  "result": {
+    "item": "enteringyourmind:titaniumite",
+    "count": 1
+  }
+}

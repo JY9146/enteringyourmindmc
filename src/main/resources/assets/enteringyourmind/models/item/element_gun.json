@@ -1,0 +1,6 @@
+{
+  "parent": "enteringyourmind:displaysettings/elementgun",
+  "textures": {
+    "layer0": "enteringyourmind:item/texture"
+  }
+}

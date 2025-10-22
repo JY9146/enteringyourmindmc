@@ -1,0 +1,6 @@
+{
+  "parent": "enteringyourmind:displaysettings/elementgunwater",
+  "textures": {
+    "layer0": "enteringyourmind:item/elementgunwatermode"
+  }
+}

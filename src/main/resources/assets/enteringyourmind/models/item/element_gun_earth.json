@@ -1,0 +1,6 @@
+{
+  "parent": "enteringyourmind:displaysettings/elementgunearth",
+  "textures": {
+    "layer0": "enteringyourmind:item/elementgunearthmode"
+  }
+}

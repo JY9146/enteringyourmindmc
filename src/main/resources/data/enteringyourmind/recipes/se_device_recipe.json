@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "cdb",
+    "ecf"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:emerald"
+    },
+    "b": {
+      "item": "enteringyourmind:titaniumite"
+    },
+    "c": {
+      "item": "minecraft:redstone"
+    },
+    "d": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "e": {
+      "item": "enteringyourmind:metal_rod"
+    },
+    "f": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "enteringyourmind:se_device",
+    "count": 1
+  }
+}

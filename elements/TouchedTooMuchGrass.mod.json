@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "poking",
+    "normalDeathMessage": "%1$s touched too much grass",
+    "itemDeathMessage": "%1$s touched too much grass by %2$s using %3$s",
+    "playerDeathMessage": "%1$s touched too much grass whilst trying to escape %2$s"
+  }
+}
