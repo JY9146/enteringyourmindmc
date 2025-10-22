@@ -1197,14 +1197,14 @@
       }
     },
     {
-      "name": "SEDeviceItemInHandTick",
+      "name": "PlayerDiesInSub",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "se_device_item_in_hand_tick",
+      "registry_name": "player_dies_in_sub",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/enteringyourmind/procedures/SEDeviceItemInHandTickProcedure.java"
+          "src/main/java/net/mcreator/enteringyourmind/procedures/PlayerDiesInSubProcedure.java"
         ],
         "dependencies": [
           {
@@ -1212,10 +1212,36 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
+            "name": "world",
+            "type": "world"
           }
         ]
+      }
+    },
+    {
+      "name": "Day1Subconscious",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_1_subconscious",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/Day1SubconsciousProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Day1SubconsciousP2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "day_1_subconscious_p_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/enteringyourmind/procedures/Day1SubconsciousP2Procedure.java"
+        ],
+        "dependencies": []
       }
     }
   ],
