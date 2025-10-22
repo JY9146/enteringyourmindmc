@@ -20,7 +20,7 @@ import net.mcreator.enteringyourmind.init.EnteringyourmindModEntities;
 import com.mojang.blaze3d.platform.InputConstants;
 
 public class ElementGunWaterRightClickedProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		double particleRadius = 0;
@@ -61,7 +61,7 @@ public class ElementGunWaterRightClickedProcedure {
 				itemstack.getOrCreateTag().putString("geckoAnim", "animation.elementgunwater.shoot");
 			for (int index0 = 0; index0 < 10; index0++) {
 				particleAmount = 10;
-				particleRadius = 1.5;
+				particleRadius = 2;
 				for (int index1 = 0; index1 < (int) particleAmount; index1++) {
 					world.addParticle((SimpleParticleType) (EnteringyourmindModParticleTypes.WATER11.get()), (entity.level()
 							.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((3 + Mth.nextInt(RandomSource.create(), 1, 10)))), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
@@ -192,7 +192,17 @@ public class ElementGunWaterRightClickedProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EnteringyourmindModEntities.INVIS_WATER.get().spawn(_level, BlockPos.containing(x + 3, y, z + 3), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = EnteringyourmindModEntities.INVIS_WATER.get().spawn(_level, BlockPos.containing(
+						entity.level()
+								.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((3 + Mth.nextInt(RandomSource.create(), 1, 10)))), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE,
+										entity))
+								.getBlockPos().getX() + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius,
+						entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(3)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY() + 0
+								+ Mth.nextDouble(RandomSource.create(), 0, 0.5) * particleRadius,
+						entity.level().clip(
+								new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((3 + Mth.nextInt(RandomSource.create(), 1, 10)))), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
+								.getBlockPos().getZ() + 0 + Mth.nextDouble(RandomSource.create(), -1, 1) * particleRadius),
+						MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}

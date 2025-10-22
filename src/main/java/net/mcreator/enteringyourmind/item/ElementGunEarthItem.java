@@ -119,7 +119,7 @@ public class ElementGunEarthItem extends Item implements GeoItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		ElementGunEarthRightClickedProcedure.execute(world, x, y, z, entity, itemstack);
+		ElementGunEarthRightClickedProcedure.execute(world, entity, itemstack);
 		return ar;
 	}
 }
